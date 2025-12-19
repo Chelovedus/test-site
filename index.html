@@ -4,51 +4,75 @@
 <head>
     <title>My first PAGE?!</title>
     <meta charset="utf-8">
-    <style >
-        INPUT:focus
+    <style>
+        :root
         {
-            color: red;
+            --header-background-color: rgb(237, 106, 90);
+            --main-background-color: rgb(244, 241, 187);
+            --footer-background-color: rgb(155, 193, 188);
         }
     </style>
 </head>
 
 <body>
-    <h1><p align="right"><a href="http://t.me/Chelovedus">@Chelovedus</a></h1>
-    <img src="img/Avatar.jpg" alt="Avatar" height="200" width="200" align="right">    
-    </p>
-
-    <strong>This is test text.</strong> Just a raw text.
-    <br><em>But I can change my text. Wow</em>
-    <hr>
-    <p>
-        This is my first paragraph.
-    </p>
-    <p>
-        This is my second paragraph.
-    </p>
-    <h1 style="color: brown;">Header 1</h1>
-    <h2>Header 2</h2>
-    <h3>Header 3</h3>
-    <h4>Header 4</h4>
-    <h5>Header 5</h5>
-    <h6>Header 6</h6>
-
-
-    <br><p>My tags:</p>
-    <textarea readonly>
-        <strong></strong> - instead of old <b>
-        <br> - transition on text line
-        <em></em> - italic text, instead of <i>
-        <hr> - horizontal line
-        <h1-6> - paired tag, in range 1-6
-        <a href="link">HyperlinkText</a> - Hyperlink for text
-    </textarea>
+    <header style="background-color: var(--header-background-color);">
+        <!--Upper left header-->
+        <section style="float: left;">
+            <strong>This is test text.</strong> Just a raw text.
+            <br><em>But I can change my text. Wow</em>
+            <p>
+                This is my first paragraph.
+            </p>
+            <p>
+                This is my second paragraph.
+            </p>
+        </section>
+        <!--Upper right header-->
+        <section style="text-align: right;">
+            <p><a href="http://t.me/Chelovedus"><h3>@Chelovedus</h3></a></p>
+            <img src="img/Avatar.jpg" alt="Avatar" height="120" width="120">
+        </section>
+    </header>
     <hr>
 
-    <p>Links:
-    <br><a href="https://youtu.be/GFqCX2AefQk?list=PLMB6wLyKp7lV9YoWTMCztq-KXYhYPB09K&t=3100">Education video about HTML 5</a>
-    <br><a href="https://validator.w3.org/nu/#file">Check on warnings in my HTML5 syntax</a></p>
+    <main style="background-color: var(--main-background-color);">
+        <article>
+            <h1 style="color: brown; margin: 0;">Header 1</h1>
+            <h2>Header 2</h2>
+            <h3>Header 3</h3>
+            <h4>Header 4</h4>
+            <h5>Header 5</h5>
+            <h6>Header 6</h6>
+        </article>
+        
+        <article>
+            <br><h3>My learned tags:</h3>
+            <code>
+                &lt;strong&gt;&lt;/strong&gt; - instead of old &lt;b&gt;
+                <br>&lt;br&gt; - transition on text line
+                <br>&lt;em&gt;&lt;/em&gt; - italic text, instead of &lt;i&gt;
+                <br>&lt;hr&gt; - horizontal line
+                <br>&lt;h1-6&gt; - paired tag, in range 1-6
+                <br>&lt;a href="link"&gt;HyperlinkText&lt;/a&gt; - Hyperlink for text
+                <br>&lt;header&gt; - head on the website
+                <br>&lt;main&gt; - general content in website
+                <br>&lt;footer&gt; - basement on the website
 
-    <!-- This is my first comment -->
+                <!--Escaped tags-->
+                <h2 style="margin-bottom: 0;">Escaped tags:</h3>
+                    <br>&amp;amp; - &amp;
+                    <br>&amp;lt; - &lt;
+                    <br>&amp;gt; - &gt;
+                    <br>&amp;quot; - &quot;
+                    <br>&amp;apos; - &apos;
+            </code>
+        </article>
+    </main>
+    <hr>
+    <footer style="background-color: var(--footer-background-color);">
+        <p style="margin: 0;">Links:
+        <br><a href="https://youtu.be/G07nLRvNkkY?list=PLMB6wLyKp7lV9YoWTMCztq-KXYhYPB09K&t=1370">Education video about HTML 5</a>
+        <br><a href="https://validator.w3.org/nu/#file">Check on warnings in my HTML5 syntax</a></p>
+    </footer>
 </body>
 </html>
